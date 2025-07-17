@@ -1,8 +1,9 @@
-function showSection(sectionId) {
-  const sections = document.querySelectorAll('.content-section');
-  sections.forEach(sec => sec.classList.remove('active'));
-  document.getElementById(sectionId).classList.add('active');
-}
+function showSection(id) {
+  const sections = document.querySelectorAll('.section');
+  sections.forEach(section => section.classList.remove('active'));
 
-// Show the 'About' section by default on load
-window.onload = () => showSection('about');
+  const activeSection = document.getElementById(id);
+  if (activeSection) {
+    activeSection.classList.add('active');
+  }
+}
