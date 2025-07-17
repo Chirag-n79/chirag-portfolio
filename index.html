@@ -9,65 +9,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
 </head>
 <body>
-  <header>
-    <h1>Welcome, I'm <span class="highlight">Chirag N</span></h1>
-    <p class="tagline">AI & ML Enthusiast | Problem Solver | Innovator</p>
-  </header>
+  <div class="container">
+    <aside class="sidebar">
+      <img src="profile.jpg" alt="Chirag N" class="profile-pic" />
+      <h1>Chirag N</h1>
+      <p>AI & ML Enthusiast</p>
+      <nav>
+        <button onclick="showSection('home')">Home</button>
+        <button onclick="showSection('about')">About</button>
+        <button onclick="showSection('skills')">Skills</button>
+        <button onclick="showSection('projects')">Projects</button>
+        <button onclick="showSection('certifications')">Certifications</button>
+        <button onclick="showSection('resume')">Resume</button>
+        <button onclick="showSection('contact')">Contact</button>
+      </nav>
+    </aside>
 
-  <nav>
-    <button onclick="showSection('about')">About</button>
-    <button onclick="showSection('skills')">Skills</button>
-    <button onclick="showSection('projects')">Projects</button>
-    <button onclick="showSection('certifications')">Certifications</button>
-    <button onclick="showSection('resume')">Resume</button>
-    <button onclick="showSection('contact')">Contact</button>
-  </nav>
+    <main class="content">
+      <section id="home" class="section active">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This is a simple, professional portfolio template.</p>
+      </section>
 
-  <main>
-    <section id="about" class="content-section">
-      <h2>About Me</h2>
-      <p>Highly motivated B.Tech student specializing in Artificial Intelligence and Machine Learning, with strong problem-solving and coding skills. Passionate about developing innovative solutions and eager to apply knowledge in real-world projects.</p>
-    </section>
+      <section id="about" class="section">
+        <h2>About Me</h2>
+        <p>I am a B.Tech student specializing in Artificial Intelligence and Machine Learning.</p>
+      </section>
 
-    <section id="skills" class="content-section">
-      <h2>Skills</h2>
-      <ul>
-        <li>Python</li>
-        <li>HTML, CSS</li>
-        <li>Databases</li>
-        <li>Video Editing</li>
-        <li>Firebase</li>
-      </ul>
-    </section>
+      <section id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+          <li>Python</li>
+          <li>HTML, CSS</li>
+          <li>Databases</li>
+          <li>Firebase</li>
+          <li>Video Editing</li>
+        </ul>
+      </section>
 
-    <section id="projects" class="content-section">
-      <h2>Projects</h2>
-      <p>See my work on <a href="https://github.com/Chirag-n79" target="_blank">GitHub</a>.</p>
-    </section>
+      <section id="projects" class="section">
+        <h2>Projects</h2>
+        <p>See my work on <a href="https://github.com/Chirag-n79" target="_blank">GitHub</a>.</p>
+      </section>
 
-    <section id="certifications" class="content-section">
-      <h2>Certifications</h2>
-      <p>Coming soon... (List your certifications here)</p>
-    </section>
+      <section id="certifications" class="section">
+        <h2>Certifications</h2>
+        <p>AWS, Microsoft Azure, Infosys Springboard, IBM (Forage)</p>
+      </section>
 
-    <section id="resume" class="content-section">
-      <h2>Resume</h2>
-      <a href="Chirag_N_Resume.pdf" download>Download Resume (PDF)</a>
-    </section>
+      <section id="resume" class="section">
+        <h2>Resume</h2>
+        <a href="Chirag_N_Resume.pdf" download>Download Resume (PDF)</a>
+      </section>
 
-    <section id="contact" class="content-section">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:cn828958@gmail.com">cn828958@gmail.com</a></p>
-      <p>Phone: 9353359800</p>
-      <p>
-        <a href="https://www.linkedin.com/in/chirag-n-222713292" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a><br>
-        <a href="https://github.com/Chirag-n79" target="_blank"><i class="fab fa-github"></i> GitHub</a>
-      </p>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2025 Chirag N. All rights reserved.</p>
-  </footer>
+      <section id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:cn828958@gmail.com">cn828958@gmail.com</a></p>
+        <p>Phone: 9353359800</p>
+        <p>
+          <a href="https://www.linkedin.com/in/chirag-n-222713292" target="_blank">LinkedIn</a> |
+          <a href="https://github.com/Chirag-n79" target="_blank">GitHub</a>
+        </p>
+      </section>
+    </main>
+  </div>
 </body>
 </html>
